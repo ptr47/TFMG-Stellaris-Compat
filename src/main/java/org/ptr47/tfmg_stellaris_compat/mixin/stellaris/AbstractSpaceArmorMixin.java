@@ -14,20 +14,17 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractSpaceArmor.AbstractSpaceChestplate.class)
 public class AbstractSpaceArmorMixin {
-    @Inject(
-            method = "getFluidTank",
-            at = @At("HEAD"),
-            cancellable = true
-    )
-    private void replaceOxygenFluidTank(ItemStack stack, CallbackInfoReturnable<UniversalFluidItemStorage> cir) {
-        cir.setReturnValue(new ItemFluidStorage(
-                com.st0x0ef.stellaris.common.registry.DataComponentsRegistry.FLUID_LIST.get(),
+    @Inject(method = "getFluidTank", at = @At("HEAD"), cancellable = true)
+    private void replaceOxygenFluidTank(ItemStack stack, CallbackInfoReturnable<UniversalFluidItemStorage> cir)
+    {
+        cir.setReturnValue(new ItemFluidStorage(com.st0x0ef.stellaris.common.registry.DataComponentsRegistry.FLUID_LIST.get(),
                 stack,
                 2,
-                3000
-        ) {
+                3000)
+        {
             @Override
-            public boolean isFluidValid(int tank, FluidStack stack) {
+            public boolean isFluidValid(int tank, FluidStack stack)
+            {
                 if (tank == 0) {
                     return stack.getFluid().isSame(FluidRegistry.OXYGEN.get());
                 } else if (tank == 1) {

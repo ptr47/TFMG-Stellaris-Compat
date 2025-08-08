@@ -11,14 +11,9 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(RoverEntity.class)
 public class RoverEntityMixin {
-    @Redirect(
-            method = "tryFillUpRover",
-            at = @At(
-                    value = "INVOKE",
-                    target = "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/item/Item;)Z"
-            )
-    )
-    private boolean redirectFuelItemIs(ItemStack instance, Item item) {
+    @Redirect(method = "tryFillUpRover", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;is(Lnet/minecraft/world/item/Item;)Z"))
+    private boolean redirectFuelItemIs(ItemStack instance, Item item)
+    {
         return instance.is(ItemsRegistry.FUEL_BUCKET.get()) ||
                 instance.is(TFMGRecipeProvider.F.hydrogenTank().asItem());
     }

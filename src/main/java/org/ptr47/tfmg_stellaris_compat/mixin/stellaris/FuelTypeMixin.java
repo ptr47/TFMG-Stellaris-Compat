@@ -10,19 +10,14 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(FuelType.Type.class)
 public class FuelTypeMixin {
-    @Inject(
-            method = "getTypeBasedOnItem",
-            at = @At("HEAD"),
-            cancellable = true
-    )
-    private static void injectGetTypeBasedOnItem(Item item, CallbackInfoReturnable<FuelType.Type> cir) {
+    @Inject(method = "getTypeBasedOnItem", at = @At("HEAD"), cancellable = true)
+    private static void injectGetTypeBasedOnItem(Item item, CallbackInfoReturnable<FuelType.Type> cir)
+    {
         if (item == null) {
             return;
-        }
-        else if (item.getDefaultInstance().is(TFMGRecipeProvider.F.dieselBucket().asItem())) {
+        } else if (item.getDefaultInstance().is(TFMGRecipeProvider.F.dieselBucket().asItem())) {
             cir.setReturnValue(FuelType.Type.DIESEL);
-        }
-        else if (item.getDefaultInstance().is(TFMGRecipeProvider.F.hydrogenTank().asItem())) {
+        } else if (item.getDefaultInstance().is(TFMGRecipeProvider.F.hydrogenTank().asItem())) {
             cir.setReturnValue(FuelType.Type.HYDROGEN);
         }
     }

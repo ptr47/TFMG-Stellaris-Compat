@@ -12,12 +12,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(VehicleFuelSlot.class)
 public class VehicleFuelSlotMixin {
-    @Inject(
-            method = "mayPlace",
-            at = @At("HEAD"),
-            cancellable = true
-    )
-    private void replaceMayPlace(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
+    @Inject(method = "mayPlace", at = @At("HEAD"), cancellable = true)
+    private void replaceMayPlace(ItemStack stack, CallbackInfoReturnable<Boolean> cir)
+    {
         boolean isProperFuel = stack.is(ItemsRegistry.FUEL_BUCKET.get()) ||
                 stack.has(DataComponentsRegistry.RADIOACTIVE.get()) ||
                 stack.is(TFMGRecipeProvider.F.hydrogenTank().asItem());
