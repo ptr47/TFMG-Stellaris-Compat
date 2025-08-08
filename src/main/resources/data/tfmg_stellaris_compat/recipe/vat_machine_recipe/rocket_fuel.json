@@ -1,0 +1,42 @@
+{
+  "type": "create:vat_machine_recipe",
+  "allowed_vat_types": [
+    "tfmg:steel_vat",
+    "tfmg:firebrick_lined_vat"
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 700,
+      "fluid": "tfmg:kerosene"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 350,
+      "fluid": "tfmg_stellaris_compat:oxygen"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 50,
+      "fluid": "tfmg:lubrication_oil"
+    },
+    {
+      "tag": "c:nuggets/lead"
+    }
+  ],
+  "machines": [
+    "tfmg:mixing"
+  ],
+  "min_size": 1,
+  "processing_time": 200,
+  "results": [
+    {
+      "amount": 1000,
+      "id": "stellaris:fuel"
+    },
+    {
+      "id": "tfmg:slag"
+    }
+  ]
+}
