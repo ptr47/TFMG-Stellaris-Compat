@@ -1,5 +1,5 @@
 {
-  "itemGroup.tfmg_stellaris_compat": "Example Mod Tab",
-  "block.tfmg_stellaris_compat.example_block": "Example Block",
-  "item.tfmg_stellaris_compat.example_item": "Example Item"
+  "itemGroup.tfmg_stellaris_compat": "TFMG Stellaris Compat",
+  "item.tfmg_stellaris_compat.oxygen_bucket": "Oxygen Tank",
+  "fluid.tfmg_stellaris_compat.oxygen": "Oxygen"
 }
