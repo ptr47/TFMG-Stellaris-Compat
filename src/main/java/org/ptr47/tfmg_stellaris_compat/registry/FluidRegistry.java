@@ -1,11 +1,11 @@
-package org.ptr47.tfmg_stellaris_compat.common.registry;
+package org.ptr47.tfmg_stellaris_compat.registry;
 
 import com.drmangotea.tfmg.registry.TFMGTags;
 import com.simibubi.create.AllTags;
 import com.simibubi.create.content.fluids.VirtualFluid;
 import com.tterrag.registrate.util.entry.FluidEntry;
 
-import static org.ptr47.tfmg_stellaris_compat.common.Registrate.REGISTRATE;
+import static org.ptr47.tfmg_stellaris_compat.Registrate.REGISTRATE;
 
 public class FluidRegistry {
     public static final FluidEntry<VirtualFluid> OXYGEN = REGISTRATE.gasFluid("oxygen", 0xffb3e6ff)

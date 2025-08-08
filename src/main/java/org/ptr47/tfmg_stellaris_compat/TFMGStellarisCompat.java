@@ -3,10 +3,10 @@ package org.ptr47.tfmg_stellaris_compat;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
-import org.ptr47.tfmg_stellaris_compat.common.registry.FluidRegistry;
+import org.ptr47.tfmg_stellaris_compat.registry.FluidRegistry;
 import org.slf4j.Logger;
 
-import static org.ptr47.tfmg_stellaris_compat.common.Registrate.REGISTRATE;
+import static org.ptr47.tfmg_stellaris_compat.Registrate.REGISTRATE;
 
 @Mod(TFMGStellarisCompat.MOD_ID)
 public class TFMGStellarisCompat

@@ -1,4 +1,4 @@
-package org.ptr47.tfmg_stellaris_compat.common;
+package org.ptr47.tfmg_stellaris_compat;
 
 import com.drmangotea.tfmg.base.fluid.GasFluidType;
 import com.simibubi.create.content.fluids.VirtualFluid;

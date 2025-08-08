@@ -6,7 +6,7 @@ import com.fej1fun.potentials.fluid.UniversalFluidItemStorage;
 import com.st0x0ef.stellaris.common.items.armors.AbstractSpaceArmor;
 import dev.architectury.fluid.FluidStack;
 import net.minecraft.world.item.ItemStack;
-import org.ptr47.tfmg_stellaris_compat.common.registry.FluidRegistry;
+import org.ptr47.tfmg_stellaris_compat.registry.FluidRegistry;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
