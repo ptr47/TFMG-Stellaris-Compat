@@ -115,8 +115,8 @@ dependencies {
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
     implementation("maven.modrinth:create-tfmg:${tfmg_version}")
 
-    runtimeOnly("maven.modrinth:architectury-api:ZxYGwlk0") // stellaris dependency
-    runtimeOnly("maven.modrinth:potentials:SKrZ8DRi") // stellaris dependency
+    implementation("maven.modrinth:architectury-api:ZxYGwlk0") // stellaris dependency
+    implementation("maven.modrinth:potentials:SKrZ8DRi") // stellaris dependency
     implementation("maven.modrinth:stellaris:${stellaris_version}")
 
     runtimeOnly("maven.modrinth:jade:iku9fmp8")

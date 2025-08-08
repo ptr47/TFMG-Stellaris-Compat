@@ -4,6 +4,12 @@
   "package": "org.ptr47.tfmg_stellaris_compat.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "stellaris.AbstractSpaceArmorChestplateMixin",
+    "stellaris.AbstractSpaceArmorMixin",
+    "stellaris.FuelTypeMixin",
+    "stellaris.RocketEntityMixin",
+    "stellaris.RoverEntityMixin",
+    "stellaris.VehicleFuelSlotMixin"
   ],
   "client": [
   ],
