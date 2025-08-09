@@ -18,7 +18,6 @@ public class TFMGStellarisCompat {
     {
         REGISTRATE.registerEventListeners(modEventBus);
         LootModifiers.register(modEventBus);
-
         FluidRegistry.init();
     }
 }

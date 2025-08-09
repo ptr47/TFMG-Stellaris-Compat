@@ -10,10 +10,10 @@
       "item": "create:electron_tube"
     },
     "C": {
-      "item": "tfmg:capacitor"
+      "item": "tfmg:capacitor_item"
     },
     "M": {
-      "item": "tfmg:precision_mechanism"
+      "item": "create:precision_mechanism"
     },
     "H": {
       "item": "tfmg:aluminum_cable_hub"

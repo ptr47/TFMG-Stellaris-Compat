@@ -1,6 +1,0 @@
-{
-  "type": "neoforge:remove_features",
-  "biomes": "#c:is_overworld",
-  "features": "stellaris:lake_oil",
-  "step": ["local_modifications", "surface_structures"]
-}

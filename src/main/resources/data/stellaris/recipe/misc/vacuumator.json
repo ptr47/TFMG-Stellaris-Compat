@@ -13,14 +13,13 @@
       "item": "tfmg:exhaust"
     },
     "M": {
-      "item": "tfmg:mechanical_pump"
+      "item": "create:mechanical_pump"
     },
     "S": {
       "tag": "c:ingots/steel"
     }
   },
   "result": {
-    "id": "stellaris:vacuumator",
-    "count": 1
+    "id": "stellaris:vacuumator"
   }
 }
