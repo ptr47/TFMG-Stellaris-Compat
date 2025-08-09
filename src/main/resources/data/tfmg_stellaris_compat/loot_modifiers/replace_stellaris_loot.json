@@ -1,0 +1,13 @@
+{
+  "type": "tfmg_stellaris_compat:replace_item",
+  "conditions": [],
+  "namespace": "stellaris",
+  "replacements": [
+    ["stellaris:heavy_ingot", "tfmg:aluminum_nugget"],
+    ["stellaris:steel_ore", "minecraft:iron_ore"],
+    ["stellaris:steel_ingot", "tfmg:steel_ingot"],
+    ["stellaris:steel_block", "tfmg:steel_block"],
+    ["stellaris:raw_steel_ingot", "minecraft:raw_iron"],
+    ["stellaris:raw_steel_block", "minecraft:raw_iron_block"]
+  ]
+}
