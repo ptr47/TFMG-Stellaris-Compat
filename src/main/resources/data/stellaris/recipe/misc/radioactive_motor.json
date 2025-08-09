@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LL ",
+    "DUI",
+    "CC "
+  ],
+  "key": {
+    "I": {
+      "item": "stellaris:ice_shard"
+    },
+    "U": {
+      "tag": "c:storage_blocks/uranium"
+    },
+    "D": {
+      "tag": "c:storage_blocks/desh"
+    },
+    "C": {
+      "tag": "c:wires/copper"
+    },
+    "L": {
+      "tag": "c:plates/lead"
+    }
+  },
+  "result": {
+    "id": "stellaris:radioactive_motor"
+  }
+}

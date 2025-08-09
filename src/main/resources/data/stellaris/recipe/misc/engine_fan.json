@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    "PSP",
+    " P "
+  ],
+  "key": {
+    "P": {
+      "item": "create:propeller"
+    },
+    "S": {
+      "tag": "c:storage_blocks/steel"
+    }
+  },
+  "result": {
+    "id": "stellaris:engine_fan"
+  }
+}

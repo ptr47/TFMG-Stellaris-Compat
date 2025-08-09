@@ -1,0 +1,34 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "pattern": [
+    " FAF ",
+    "FAOAF",
+    "RSHSR"
+  ],
+  "key": {
+    "F": {
+      "item": "tfmg:synthetic_string"
+    },
+    "A": {
+      "tag": "c:plates/aluminum"
+    },
+    "O": {
+      "item": "stellaris:oxygen_tank"
+    },
+    "S": {
+      "item": "tfmg:screw"
+    },
+    "H": {
+      "item": "tfmg:steel_cable_hub"
+    },
+    "R": {
+      "item": "tfmg:rubber_sheet"
+    }
+  },
+  "result": {
+    "id": "stellaris:space_suit_chestplate"
+  },
+  "show_notification": false
+}

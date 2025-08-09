@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FSF",
+    "ARA",
+    "F F"
+  ],
+  "key": {
+    "F": {
+      "item": "tfmg:synthetic_string"
+    },
+    "A": {
+      "tag": "c:plates/aluminum"
+    },
+    "S": {
+      "tag": "c:ingots/steel"
+    },
+    "R": {
+      "tag": "c:ingots/rubber"
+    }
+  },
+  "result": {
+    "id": "stellaris:space_suit_leggings",
+    "count": 1
+  }
+}

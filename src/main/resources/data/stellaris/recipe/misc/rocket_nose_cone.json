@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "VAV",
+    "SSS"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:plates/aluminum"
+    },
+    "V": {
+      "item": "tfmg:screw"
+    },
+    "E": {
+      "item": "create:electron_tube"
+    },
+    "S": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "result": {
+    "id": "stellaris:rocket_nose_cone"
+  }
+}

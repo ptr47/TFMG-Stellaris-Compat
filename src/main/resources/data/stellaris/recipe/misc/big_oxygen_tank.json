@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RVR",
+    "AFA",
+    "STS"
+  ],
+  "key": {
+    "S": {
+      "tag": "c:ingots/steel"
+    },
+    "R": {
+      "item": "tfmg:rubber_sheet"
+    },
+    "T": {
+      "item": "tfmg:steel_fluid_tank"
+    },
+    "F": {
+      "item": "tfmg:steel_fluid_valve"
+    },
+    "A": {
+      "tag": "c:plates/aluminium"
+    },
+    "V": {
+      "item": "create:red_valve_handle"
+    }
+  },
+  "result": {
+    "id": "stellaris:big_oxygen_tank"
+  }
+}

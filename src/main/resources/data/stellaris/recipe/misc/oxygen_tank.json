@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " V ",
+    "RFR",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "tag": "c:ingots/steel"
+    },
+    "R": {
+      "item": "tfmg:rubber_sheet"
+    },
+    "F": {
+      "item": "tfmg:steel_fluid_valve"
+    },
+    "V": {
+      "item": "create:red_valve_handle"
+    }
+  },
+  "result": {
+    "id": "stellaris:oxygen_tank"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PEP",
+    "PMP",
+    "SSS"
+  ],
+  "key": {
+    "P": {
+      "item": "create:fluid_pipe"
+    },
+    "E": {
+      "item": "tfmg:exhaust"
+    },
+    "M": {
+      "item": "tfmg:mechanical_pump"
+    },
+    "S": {
+      "tag": "c:ingots/steel"
+    }
+  },
+  "result": {
+    "id": "stellaris:vacuumator",
+    "count": 1
+  }
+}

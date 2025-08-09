@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LCL",
+    "MHM",
+    "III"
+  ],
+  "key": {
+    "L": {
+      "item": "create:electron_tube"
+    },
+    "C": {
+      "item": "tfmg:capacitor"
+    },
+    "M": {
+      "item": "tfmg:precision_mechanism"
+    },
+    "H": {
+      "item": "tfmg:aluminum_cable_hub"
+    },
+    "I": {
+      "item": "stellaris:iron_plating_block"
+    }
+  },
+  "result": {
+    "id": "stellaris:upgrade_station"
+  }
+}

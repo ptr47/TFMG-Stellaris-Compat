@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "count": 150,
+      "tag": "c:ingots/steel"
+    },
+    {
+      "count": 120,
+      "tag": "c:plates/aluminum"
+    },
+    {
+      "count": 30,
+      "tag": "c:ingots/nickel"
+    },
+    {
+      "count": 10,
+      "tag": "c:rods/steel"
+    }
+  ],
+  "location": "stellaris:space_station_medium",
+  "antenna_position": [
+    24,
+    33,
+    23
+  ]
+}

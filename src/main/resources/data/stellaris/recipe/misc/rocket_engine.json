@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "AMA",
+    "NFN"
+  ],
+  "key": {
+    "P": {
+      "item": "tfmg:steel_pipe"
+    },
+    "I": {
+      "item": "tfmg:spark_plug"
+    },
+    "A": {
+      "tag": "c:plates/aluminum"
+    },
+    "M": {
+      "item": "tfmg:steel_mechanical_pump"
+    },
+    "N": {
+      "tag": "c:ingots/nickel"
+    },
+    "F": {
+      "item": "stellaris:engine_fan"
+    }
+  },
+  "result": {
+    "id": "stellaris:rocket_engine"
+  }
+}

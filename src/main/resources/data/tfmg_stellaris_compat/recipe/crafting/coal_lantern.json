@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iCi",
+    "iii"
+  ],
+  "key": {
+    "C": {
+      "tag": "minecraft:coals"
+    },
+    "i": {
+      "tag": "c:nuggets/iron"
+    }
+  },
+  "result": {
+    "id": "stellaris:coal_lantern"
+  }
+}

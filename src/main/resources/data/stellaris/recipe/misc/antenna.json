@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "REL",
+    "RBC",
+    "ASA"
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:lightning_rod"
+    },
+    "E": {
+      "item": "tfmg:electromagnetic_coil"
+    },
+    "S": {
+      "item": "tfmg:steel_casing"
+    },
+    "R": {
+      "item": "tfmg:rubber_sheet"
+    },
+    "B": {
+      "item": "tfmg:circuit_board"
+    },
+    "C": {
+      "tag": "c:wires/copper"
+    },
+    "A": {
+      "tag": "c:plates/aluminum"
+    }
+  },
+  "result": {
+    "id": "stellaris:antenna"
+  }
+}

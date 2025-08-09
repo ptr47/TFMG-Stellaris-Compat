@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ASA",
+    "R R"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:plates/aluminum"
+    },
+    "S": {
+      "item": "tfmg:screw"
+    },
+    "R": {
+      "item": "tfmg:rebar"
+    }
+  },
+  "result": {
+    "id": "stellaris:rocket_fin"
+  }
+}

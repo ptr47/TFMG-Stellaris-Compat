@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    "DFD",
+    "DDD"
+  ],
+  "key": {
+    "D": {
+      "tag": "c:ingots/desh"
+    },
+    "F": {
+      "item": "create:fluid_tank"
+    },
+    "S": {
+      "item": "tfmg:screw"
+    }
+  },
+  "result": {
+    "id": "stellaris:big_fuel_tank_upgrade"
+  }
+}

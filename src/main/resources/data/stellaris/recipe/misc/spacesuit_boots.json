@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S S",
+    "ARA",
+    "R R"
+  ],
+  "key": {
+    "S": {
+      "item": "tfmg:synthetic_string"
+    },
+    "A": {
+      "tag": "c:plates/aluminum"
+    },
+    "R": {
+      "item": "tfmg:rubber_sheet"
+    }
+  },
+  "result": {
+    "id": "stellaris:space_suit_boots"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "pattern": [
+    "      A  ",
+    "     ALA ",
+    "      I  ",
+    "SW__EHISB",
+    " RRR RRR "
+  ],
+  "key": {
+    "B": {
+      "item": "tfmg:light_bulb"
+    },
+    "H": {
+      "item": "tfmg:steel_cable_hub"
+    },
+    "S": {
+      "tag": "c:ingots/steel"
+    },
+    "E": {
+      "item": "tfmg:regular_engine"
+    },
+    "R": {
+      "item": "tfmg:rubber_sheet"
+    },
+    "_": {
+      "tag": "create:seats"
+    },
+    "I": {
+      "tag": "c:rods/steel"
+    },
+    "W": {
+      "item": "tfmg:aluminum_cogwheel"
+    },
+    "L": {
+      "item": "tfmg:lithium_torch"
+    },
+    "A": {
+      "tag": "c:plates/aluminum"
+    }
+  },
+  "result": {
+    "id": "stellaris:rover"
+  },
+  "show_notification": false
+}

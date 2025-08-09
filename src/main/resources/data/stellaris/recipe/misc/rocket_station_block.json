@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": true,
+  "category": "misc",
+  "pattern": [
+    " A ",
+    "CRC",
+    "MRM",
+    "IHI"
+  ],
+  "key": {
+    "I": {
+      "item": "stellaris:iron_plating_block"
+    },
+    "R": {
+      "tag": "c:rods/steel"
+    },
+    "C": {
+      "item": "tfmg:steel_cogwheel"
+    },
+    "H": {
+      "item": "tfmg:steel_cable_hub"
+    },
+    "M": {
+      "item": "create:mechanical_arm"
+    },
+    "A": {
+      "tag": "c:ingots/aluminum"
+    }
+  },
+  "result": {
+    "id": "stellaris:rocket_station"
+  },
+  "show_notification": false
+}

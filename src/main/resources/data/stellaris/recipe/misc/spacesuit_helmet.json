@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "ATA",
+    "FRF"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:plates/aluminum"
+    },
+    "B": {
+      "item": "tfmg:light_bulb"
+    },
+    "R": {
+      "tag": "c:ingots/rubber"
+    },
+    "T": {
+      "item": "minecraft:tinted_glass"
+    },
+    "F": {
+      "item": "tfmg:synthetic_string"
+    }
+  },
+  "result": {
+    "id": "stellaris:space_suit_helmet"
+  }
+}
