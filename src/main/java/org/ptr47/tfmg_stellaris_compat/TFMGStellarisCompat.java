@@ -4,20 +4,23 @@ import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import org.ptr47.tfmg_stellaris_compat.loot.LootModifiers;
-import org.ptr47.tfmg_stellaris_compat.registry.FluidRegistry;
+import org.ptr47.tfmg_stellaris_compat.registry.BlockEntities;
+import org.ptr47.tfmg_stellaris_compat.registry.Blocks;
+import org.ptr47.tfmg_stellaris_compat.registry.Fluids;
 import org.slf4j.Logger;
-
-import static org.ptr47.tfmg_stellaris_compat.Registrate.REGISTRATE;
 
 @Mod(TFMGStellarisCompat.MOD_ID)
 public class TFMGStellarisCompat {
     public static final String MOD_ID = "tfmg_stellaris_compat";
     public static final Logger LOGGER = LogUtils.getLogger();
+    public static final Registrate REGISTRATE = Registrate.create(MOD_ID);
 
     public TFMGStellarisCompat(IEventBus modEventBus)
     {
         REGISTRATE.registerEventListeners(modEventBus);
         LootModifiers.register(modEventBus);
-        FluidRegistry.init();
+        Fluids.init();
+        Blocks.init();
+        BlockEntities.init();
     }
 }

@@ -1,5 +1,3 @@
 {
-  "itemGroup.tfmg_stellaris_compat": "TFMG Stellaris Compat",
-  "item.tfmg_stellaris_compat.oxygen_bucket": "Oxygen Tank",
-  "fluid.tfmg_stellaris_compat.oxygen": "Oxygen"
+  "itemGroup.tfmg_stellaris_compat": "TFMG Stellaris Compat"
 }

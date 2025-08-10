@@ -4,6 +4,8 @@
   "namespace": "stellaris",
   "replacements": [
     ["stellaris:heavy_ingot", "tfmg:aluminum_nugget"],
+    ["stellaris:heavy_metal_plate", "tfmg:aluminum_nugget"],
+    ["stellaris:heavy_metal_casing", "tfmg:aluminum_nugget"],
     ["stellaris:steel_ore", "minecraft:iron_ore"],
     ["stellaris:steel_ingot", "tfmg:steel_ingot"],
     ["stellaris:steel_block", "tfmg:steel_block"],

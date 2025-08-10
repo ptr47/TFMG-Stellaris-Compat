@@ -15,8 +15,6 @@ public class Registrate extends CreateRegistrate {
         super(modid);
     }
 
-    public static final Registrate REGISTRATE = Registrate.create(MOD_ID);
-
     public static Registrate create(String modid)
     {
         return new Registrate(modid);
