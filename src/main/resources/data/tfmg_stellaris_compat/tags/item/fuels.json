@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#tfmg_stellaris_compat:fuels/low",
+    "#tfmg_stellaris_compat:fuels/medium",
+    "#tfmg_stellaris_compat:fuels/high",
+    "#tfmg_stellaris_compat:fuels/extreme"
+  ]
+}
