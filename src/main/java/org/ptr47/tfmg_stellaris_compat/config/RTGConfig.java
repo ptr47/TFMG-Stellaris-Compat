@@ -12,12 +12,13 @@ public class RTGConfig extends ConfigBase {
 
     public final ConfigGroup voltage = group(1, "voltage", "Voltage");
     public final ConfigInt voltageBase = i(100, 0, "voltageBase", Comments.voltageBase);
-    public final ConfigInt voltagePerLevel = i(40, 0, "voltagePerLevel", Comments.voltagePerLevel);
+    public final ConfigInt voltagePerLevel = i(20, 0, "voltagePerLevel", Comments.voltagePerLevel);
 
     public final ConfigGroup power = group(1, "power", "Power");
     public final ConfigInt powerBase = i(2000, 0, "powerBase", Comments.powerBase);
-    public final ConfigInt powerPerLevel = i(6000, 0, "powerPerLevel", Comments.powerPerLevel);
-    public final ConfigBool enableFuelDecay = b(true, "enableFuelDecay", Comments.enableFuelDecay);
+    public final ConfigInt powerPerLevel = i(5000, 0, "powerPerLevel", Comments.powerPerLevel);
+    public final ConfigFloat maxRTGPowerDecay = f(0.3f, 0.0f, 1.0f, "maxRTGPowerDecay", Comments.maxRTGPowerDecay);
+
     @Override
     public String getName() {
         return "RTG";
@@ -29,9 +30,11 @@ public class RTGConfig extends ConfigBase {
         static final String burnTimeHigh = "The burn time of the high-power RTG fuel.";
         static final String burnTimeExtreme = "The burn time of the extreme-power RTG fuel.";
         static final String voltageBase = "The base voltage of the RTG.";
-        static final String voltagePerLevel = "The voltage increase per power level.";
+        static final String voltagePerLevel = "The voltage increase per fuels power level.";
         static final String powerBase = "The base power output of the RTG.";
-        static final String powerPerLevel = "The power increase per power level.";
-        static final String enableFuelDecay = "Whether fuel decay is enabled.";
+        static final String powerPerLevel = "The power increase per fuels power level.";
+        static final String maxRTGPowerDecay =
+                "The percentage of RTG's power output that will be lost at the end of a fuels burn time.\n" +
+                        "0.0 = no decay, 1.0 = full decay.";
     }
 }

@@ -65,13 +65,12 @@ public class RadioactiveGeneratorBlockEntity extends ElectricBlockEntity {
             return;
         }
 
-        stack.shrink(1);
         burnTimeTotal = getBurnDuration(stack);
         burnTimeLeft = burnTimeTotal;
         currentPowerLevel = getPowerLevelForFuel(stack);
+        stack.shrink(1);
 
         setLitBlockState(true);
-
         updateNextTick();
         setChanged();
         sendData();
@@ -86,8 +85,8 @@ public class RadioactiveGeneratorBlockEntity extends ElectricBlockEntity {
         boolean isRefined = stack.is(Tags.Items.INGOTS) || stack.is(Tags.Items.STORAGE_BLOCKS);
         int tier = stack.is(RTG_FUEL_LOW) ? 0 :
                    stack.is(RTG_FUEL_MEDIUM) ? 1 : stack.is(RTG_FUEL_HIGH) ? 2 : stack.is(RTG_FUEL_EXTREME) ? 3 : -1;
-
-        return isRefined ? 40 + tier * 5 : tier + 1;
+        int refinementBonus = 40;
+        return isRefined ? refinementBonus + tier * 5 : tier + 1;
     }
 
     public static void registerCapabilities(RegisterCapabilitiesEvent event) {
@@ -114,6 +113,7 @@ public class RadioactiveGeneratorBlockEntity extends ElectricBlockEntity {
         currentPowerLevel = compound.getInt("powerLevel");
     }
 
+
     private int getBurnDuration(ItemStack stack) {
         boolean isBlock = stack.is(Tags.Items.STORAGE_BLOCKS);
         boolean isNugget = stack.is(Tags.Items.NUGGETS);
@@ -134,21 +134,18 @@ public class RadioactiveGeneratorBlockEntity extends ElectricBlockEntity {
 
     @Override
     public int voltageGeneration() {
-        return TFMGStellarisCompatConfigs.common().rtgConfig.voltageBase.get() +
-                currentPowerLevel * TFMGStellarisCompatConfigs.common().rtgConfig.voltagePerLevel.get();
+        int base = currentPowerLevel > 0 ? TFMGStellarisCompatConfigs.common().rtgConfig.voltageBase.get() : 0;
+        return base + currentPowerLevel * TFMGStellarisCompatConfigs.common().rtgConfig.voltagePerLevel.get();
     }
 
     @Override
     public int powerGeneration() {
         float lifeFraction = (float) burnTimeLeft / burnTimeTotal;
-        float decayFactor = 0.5f + (0.5f * lifeFraction);
+        double maxDecay = TFMGStellarisCompatConfigs.common().rtgConfig.maxRTGPowerDecay.get();
+        float decayFactor = (float) ((1.0f - maxDecay) + (maxDecay * lifeFraction));
         int maxPower = TFMGStellarisCompatConfigs.common().rtgConfig.powerBase.get() +
                 currentPowerLevel * TFMGStellarisCompatConfigs.common().rtgConfig.powerPerLevel.get();
-        if (TFMGStellarisCompatConfigs.common().rtgConfig.enableFuelDecay.get()) {
-            return Math.round(decayFactor * maxPower);
-        } else {
-            return maxPower;
-        }
+        return Math.round(decayFactor * maxPower);
     }
 
     public SmartInventory getInventory() {
