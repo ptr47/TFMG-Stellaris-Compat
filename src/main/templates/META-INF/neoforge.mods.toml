@@ -36,6 +36,6 @@ side = "BOTH"
 [[dependencies."${mod_id}"]]
 modId = "stellaris"
 type = "required"
-versionRange = "[1.4.4,1.5.0)"
+versionRange = "[1.4.6,1.5.0)"
 ordering = "AFTER"
 side = "BOTH"
