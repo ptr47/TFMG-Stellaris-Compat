@@ -38,8 +38,8 @@ public class RadioactiveGeneratorBlockEntity extends ElectricBlockEntity {
     }
 
     @Override
-    public void tick() {
-        super.tick();
+    public void lazyTick() {
+        super.lazyTick();
         if (level == null || level.isClientSide) {
             return;
         }

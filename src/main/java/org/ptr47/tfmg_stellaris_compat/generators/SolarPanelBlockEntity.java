@@ -16,11 +16,23 @@ public class SolarPanelBlockEntity extends ElectricBlockEntity {
 
     @Override
     public int voltageGeneration() {
+        if (level.isClientSide || level.isNight()) {
+            return 0;
+        }
         return TFMGStellarisCompatConfigs.common().solarPanelConfig.voltage.get();
     }
 
     @Override
+    public void lazyTick() {
+        super.lazyTick();
+        updateNetwork();
+    }
+
+    @Override
     public int powerGeneration() {
+        if (level.isClientSide || level.isNight()) {
+            return 0;
+        }
         return TFMGStellarisCompatConfigs.common().solarPanelConfig.power.get();
     }
 }
