@@ -1,5 +1,6 @@
 {
   "block.tfmg_stellaris_compat.rtg": "RTG",
+  "block.tfmg_stellaris_compat.solar_panel": "Solar Panel",
   "fluid.tfmg_stellaris_compat.oxygen": "Oxygen",
   "item.tfmg_stellaris_compat.oxygen_bucket": "Oxygen Tank"
 }

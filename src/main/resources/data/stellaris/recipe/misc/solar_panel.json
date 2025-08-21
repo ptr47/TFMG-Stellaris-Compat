@@ -1,28 +1,3 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "SSS",
-    "WHW",
-    "ABA"
-  ],
-  "key": {
-    "A": {
-      "tag": "c:plates/aluminum"
-    },
-    "S": {
-      "tag": "c:ingots/silicon"
-    },
-    "H": {
-      "item": "tfmg:aluminum_cable_hub"
-    },
-    "W": {
-      "tag": "c:wires/copper"
-    },
-    "B": {
-      "item": "tfmg:capacitor_item"
-    }
-  },
-  "result": {
-    "id": "stellaris:solar_panel"
-  }
+  "type": "minecraft:empty"
 }
