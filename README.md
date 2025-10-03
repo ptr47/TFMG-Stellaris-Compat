@@ -32,6 +32,7 @@ RTG:
 Solar Panel:
 - Flat voltage and power generation
 - Doesn't work at night
+- Needs clear view of the sky
 
 #### Configuration
 
