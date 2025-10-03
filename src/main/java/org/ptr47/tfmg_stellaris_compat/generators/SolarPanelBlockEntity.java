@@ -30,7 +30,7 @@ public class SolarPanelBlockEntity extends ElectricBlockEntity {
 
     @Override
     public int powerGeneration() {
-        if (level.isClientSide || level.isNight()) {
+        if (level.isClientSide || level.isNight() || !level.canSeeSkyFromBelowWater(worldPosition.above())) {
             return 0;
         }
         return TFMGStellarisCompatConfigs.common().solarPanelConfig.power.get();
