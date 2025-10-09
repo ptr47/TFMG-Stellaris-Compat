@@ -1,5 +1,5 @@
 {
-  "type": "create:vat_machine_recipe",
+  "type": "tfmg:vat_machine_recipe",
   "allowed_vat_types": [
     "tfmg:steel_vat",
     "tfmg:firebrick_lined_vat"
@@ -29,7 +29,7 @@
     "tfmg:mixing"
   ],
   "min_size": 1,
-  "processing_time": 200,
+  "processing_time": 100,
   "results": [
     {
       "amount": 1000,
