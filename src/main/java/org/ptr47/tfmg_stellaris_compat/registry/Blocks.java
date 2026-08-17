@@ -20,8 +20,7 @@ public class Blocks {
                       .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                       .tag(BlockTags.NEEDS_IRON_TOOL)
                       .item()
-                      .model((ctx, prov) -> prov.withExistingParent(ctx.getName(),
-                              ResourceLocation.fromNamespaceAndPath("stellaris", "block/radioactive_generator")))
+                      .model((ctx, prov) -> {})
                       .build()
                       .register();
 
@@ -34,8 +33,7 @@ public class Blocks {
                       .tag(BlockTags.MINEABLE_WITH_PICKAXE)
                       .tag(BlockTags.NEEDS_IRON_TOOL)
                       .item()
-                      .model((ctx, prov) -> prov.withExistingParent(ctx.getName(),
-                              ResourceLocation.fromNamespaceAndPath("stellaris", "block/solar_panel")))
+                      .model((ctx, prov) -> {})
                       .build()
                       .register();
 
