@@ -85,8 +85,9 @@ public class RadioactiveGeneratorBlockEntity extends ElectricBlockEntity {
         boolean isRefined = stack.is(Tags.Items.INGOTS) || stack.is(Tags.Items.STORAGE_BLOCKS);
         int tier = stack.is(RTG_FUEL_LOW) ? 0 :
                    stack.is(RTG_FUEL_MEDIUM) ? 1 : stack.is(RTG_FUEL_HIGH) ? 2 : stack.is(RTG_FUEL_EXTREME) ? 3 : -1;
-        int refinementBonus = 40;
-        return isRefined ? refinementBonus + tier * 5 : tier + 1;
+        tier *= 5;
+        int refinementBonus = TFMGStellarisCompatConfigs.common().rtgConfig.fuelRefinementBonus.get();
+        return isRefined ? refinementBonus + tier : tier + 1;
     }
 
     public static void registerCapabilities(RegisterCapabilitiesEvent event) {

@@ -13,7 +13,7 @@ import static org.ptr47.tfmg_stellaris_compat.TFMGStellarisCompat.REGISTRATE;
 public class Blocks {
     public static final BlockEntry<RadioactiveGeneratorBlock> RADIOACTIVE_GENERATOR =
             REGISTRATE.block("rtg", RadioactiveGeneratorBlock::new)
-                      .lang("RTG")
+                      .lang("Compact Nuclear Generator")
                       .initialProperties(SharedProperties::softMetal)
                       .properties(p -> p.sound(SoundType.NETHERITE_BLOCK).strength(10F).requiresCorrectToolForDrops())
                       .blockstate((ctx, prov) -> {})
