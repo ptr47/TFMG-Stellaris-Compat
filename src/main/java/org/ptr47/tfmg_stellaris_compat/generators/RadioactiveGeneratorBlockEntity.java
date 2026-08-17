@@ -43,7 +43,7 @@ public class RadioactiveGeneratorBlockEntity extends ElectricBlockEntity {
         if (level == null || level.isClientSide) {
             return;
         }
-        updateNetwork();
+        updateNextTick();
         if (burnTimeLeft > 0) {
             burnTimeLeft--;
             if (burnTimeLeft == 0) {
@@ -134,8 +134,7 @@ public class RadioactiveGeneratorBlockEntity extends ElectricBlockEntity {
 
     @Override
     public int voltageGeneration() {
-        int base = currentPowerLevel > 0 ? TFMGStellarisCompatConfigs.common().rtgConfig.voltageBase.get() : 0;
-        return base + currentPowerLevel * TFMGStellarisCompatConfigs.common().rtgConfig.voltagePerLevel.get();
+        return currentPowerLevel > 0 ? TFMGStellarisCompatConfigs.common().rtgConfig.voltageBase.get() : 0;
     }
 
     @Override
@@ -157,5 +156,15 @@ public class RadioactiveGeneratorBlockEntity extends ElectricBlockEntity {
             return false;
         }
         return stack.is(RTG_FUELS);
+    }
+
+    @Override
+    public int getMaxVoltage() {
+        return 0;
+    }
+
+    @Override
+    public int getMaxCurrent() {
+        return 0;
     }
 }
